@@ -1,6 +1,6 @@
 # Produtiva — Controle de Produção (SaaS)
 
-Transformação completa da planilha **"CONTROLE DE PRODUÇÃO — JESIEL E TONIATI 2026"**
+Transformação completa da planilha **"CONTROLE DE PRODUÇÃO"**
 em um produto de software: mesma lógica, mesmas fórmulas, mesmos dados — em uma
 experiência de dashboard moderna, dark mode, inspirada em produtos como Notion,
 Linear e Stripe Dashboard.
