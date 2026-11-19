@@ -1,119 +1,162 @@
-# Controle de Produção (SaaS) / Versão 2026
+<h1 align="center">📈 Produtiva — Controle de Produção (SaaS)</h1>
 
-Aplicação web para controle pessoal de produção e gestão de arquivos.
+<p align="center">
+  A planilha <b>"Controle de Produção 2026"</b> transformada em um produto web:<br>
+  mesmas fórmulas, mesmos dados, em um dashboard moderno com dark mode.
+</p>
 
-## Acesso
+<p align="center">
+  <a href="https://producao-arquivos.up.railway.app/"><img src="https://img.shields.io/badge/🚀_Ver_aplicação_online-C6F135?style=for-the-badge&labelColor=111827&color=C6F135&logoColor=black" alt="Ver aplicação online"></a>
+</p>
 
-* **URL:** [https://producao-arquivos.up.railway.app/](https://producao-arquivos.up.railway.app/)
-* **Usuário / Nome:** `Homer`
-* **Senha:** `33`
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-14-000000?logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/Recharts-2-22B5BF" alt="Recharts">
+  <img src="https://img.shields.io/badge/Deploy-Railway-0B0D0E?logo=railway&logoColor=white" alt="Railway">
+</p>
 
-Transformação completa da planilha **"CONTROLE DE PRODUÇÃO"**
-em um produto de software: mesma lógica, mesmas fórmulas, mesmos dados — em uma
-experiência de dashboard moderna, dark mode, inspirada em produtos como Notion,
-Linear e Stripe Dashboard.
+<p align="center">
+  <a href="https://producao-arquivos.up.railway.app/">
+    <img src="assets/dashboard.png" alt="Visão geral do dashboard Produtiva" width="100%">
+  </a>
+</p>
 
-## ✏️ Agora dá para editar — igual preencher a planilha
+---
 
-Todo campo é clicável e editável diretamente na tela:
+## 🎯 Sobre o projeto
 
-- **Arquivos feitos**, **desconto** e **observações** de cada dia → clique no valor, digite e aperte Enter (ou clique fora).
-- **Serviço extra**, **trabalhou?** e **viajou?** → botões "Sim/Não" que alternam com um clique.
-- **Salário do mês**, **quinzenas** e **valor fixo do extra** → editáveis no card "Configurações do mês" de cada mês, na "Situação do mês" do Dashboard, e direto na coluna "Salário base" da tabela do Resumo Anual (a 1ª/2ª quinzena fica travada em meses que calculam automaticamente, igual na planilha original).
-- **Mês ativo** → escolha qual mês aparece como "atual" no Dashboard: use o seletor no topo da Visão geral, clique na estrela ⭐ de qualquer mês (no Dashboard, na Sidebar ou na lista "Controle mensal"), ou navegue até o mês desejado.
-- **Nome do perfil** (canto inferior da sidebar) → clique para renomear.
-- Todos os totais (ganho do dia, líquido, blocos de quinzena, resumo anual) **recalculam sozinhos** assim que você edita qualquer campo — porque continuam sendo fórmulas de verdade, não números fixos.
-- Um indicador "Salvando... / Salvo" aparece sempre que algo é gravado.
-- Botão **"Restaurar"** em cada mês e **"Restaurar dados originais"** na lista de meses e no Resumo Anual, para voltar aos valores originais da planilha a qualquer momento.
+Aplicação web para **controle pessoal de produção e gestão de arquivos**. Ela nasceu de uma planilha de Excel e mantém toda a lógica original: nada virou número fixo, cada fórmula foi reescrita como uma função TypeScript. Tudo recalcula sozinho assim que você edita qualquer campo.
 
-### Onde os dados ficam salvos
+A interface é inspirada em produtos como Notion, Linear e Stripe Dashboard.
 
-As edições são gravadas em `data/producao.json`, um arquivo criado automaticamente
-na primeira vez que você abre o sistema (a partir dos dados originais em
-`src/lib/data.ts`, que nunca é alterado). Esse arquivo guarda os lançamentos de
-cada mês **e também** as preferências do app (mês ativo, nome do perfil) — é
-o "banco de dados" local do sistema. Feche o servidor, abra de novo, e tudo
-continua exatamente como você deixou.
+## ✨ Funcionalidades
 
-Se quiser começar do zero, é só apagar o arquivo `data/producao.json` (ou usar o
-botão "Restaurar dados originais" dentro do app) e ele é recriado automaticamente.
+- 📊 **Visão geral:** KPIs do ano (arquivos feitos, total líquido, extras, dias viajados), gráfico de salário base vs. líquido por mês, calendário de dias ativos e situação do mês.
+- 🗓️ **Controle mensal:** um card por mês (maio a dezembro de 2026), com status, arquivos, extras e total líquido.
+- 📝 **Detalhe do mês:** tabela diária 100% editável, com busca, filtro e ordenação, além do card de configurações do mês.
+- 📑 **Resumo anual:** equivalente à aba "Resumo Anual" da planilha, com evolução mensal e tabela consolidada.
+- ✏️ **Edição como na planilha:** clique no valor, digite e aperte Enter. Os campos Sim/Não alternam com um clique.
+- ⭐ **Mês ativo:** escolha qual mês aparece como "atual" no dashboard.
+- 💾 **Salvamento automático:** com indicador "Salvando… / Salvo".
+- ♻️ **Restaurar:** volte aos dados originais da planilha, por mês ou de tudo de uma vez.
+- 🔒 **Proteção por senha** (opcional): autenticação básica configurada por variáveis de ambiente.
 
-## Stack
+## 🖼️ Telas
 
-Next.js 14 (App Router) · React 18 · TypeScript · Tailwind CSS · componentes no
-padrão shadcn/ui (escritos localmente) · Recharts · Lucide Icons · API Routes do
-Next.js como backend (leem/gravam o arquivo `data/producao.json`).
+<table>
+  <tr>
+    <td width="50%"><b>Controle mensal</b><br><img src="assets/meses.png" alt="Controle mensal"></td>
+    <td width="50%"><b>Resumo anual</b><br><img src="assets/resumo-anual.png" alt="Resumo anual"></td>
+  </tr>
+</table>
 
-## Como rodar
+## 🛠️ Stack
+
+| Tecnologia | Uso |
+|---|---|
+| [Next.js 14](https://nextjs.org/) (App Router) | Framework e API Routes (backend) |
+| [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) | Interface e tipagem |
+| [Tailwind CSS](https://tailwindcss.com/) | Estilização |
+| Componentes no padrão [shadcn/ui](https://ui.shadcn.com/) | Escritos localmente em `components/ui` |
+| [Recharts](https://recharts.org/) | Gráficos |
+| [Lucide](https://lucide.dev/) | Ícones |
+
+## 🚀 Como executar localmente
+
+O projeto fica dentro da pasta `app/`.
 
 ```bash
+git clone https://github.com/jesielrodrigues/producao-arquivos-saas.git
+cd producao-arquivos-saas/app
 npm install
 npm run dev
 ```
 
-Abra http://localhost:3000
+Abra [http://localhost:3000](http://localhost:3000).
 
-## Onde a "inteligência" da planilha está
+Para gerar a versão de produção:
 
-Nada foi convertido em número fixo. Toda fórmula da planilha foi remapeada para
-uma função TypeScript equivalente:
-
-| Planilha (Excel)                                             | Código (`src/lib/calculations.ts`)                     |
-|----------------------------------------------------------------|---------------------------------------------------------|
-| `F = SE(E="Sim"; $C$5; 0)` (Mai–Jul) / valor lançado (Ago–Dez)  | `valorExtraDoDia()`                                      |
-| `G = ARRED(quinzena/dias_úteis; 2) + F`                        | `ganhoDoDia()`                                           |
-| `L = G - K`                                                     | `ganhoLiquidoDoDia()`                                    |
-| Blocos "1ª quinzena" / "2ª quinzena" / "Total do mês"           | `calcularResumoMes()` → `BlocoQuinzena`                  |
-| Texto "SITUAÇÃO DO MÊS: ..."                                    | `calcularResumoMes().situacaoTexto`                      |
-| Aba "📊 Resumo Anual" (referências entre abas)                  | `calcularResumoAnual()`                                  |
-
-Os **insumos brutos** originais (salário do mês, valor de cada quinzena, arquivos
-feitos por dia, se houve serviço extra, se trabalhou, se viajou, descontos e
-observações) ficam em `src/lib/data.ts`, extraídos célula a célula do arquivo
-original — inclusive a particularidade dos 3 primeiros dias de maio, que na
-planilha usam a taxa do salário mensal cheio (`/24`) em vez da quinzena, por
-serem uma sobra do ciclo de abril. Essa regra foi preservada (`taxaRef:
-"mensal"`).
-
-Todos os valores foram conferidos programaticamente célula a célula contra o
-arquivo `.xlsx` original antes da migração — 0 divergências.
-
-## Estrutura
-
-```
-data/
-  producao.json               → "banco de dados" local (criado automaticamente)
-src/
-  app/
-    api/
-      data/route.ts            → GET: retorna todos os meses
-      dias/route.ts             → PATCH: edita um lançamento diário
-      mes/route.ts               → PATCH: edita config do mês · POST: restaura o mês
-      reset/route.ts             → POST: restaura todos os meses
-    page.tsx                    → Dashboard (Visão geral)
-    meses/page.tsx               → Grade com os 8 meses
-    meses/[slug]/page.tsx         → Detalhe do mês (server) → delega ao client abaixo
-    resumo-anual/page.tsx         → Equivalente à aba "📊 Resumo Anual"
-  components/
-    ui/                           → primitives (Card, Badge, Input, Button,
-                                     EditableNumber, EditableText, ToggleSimNao)
-    mes-detalhe-client.tsx        → dono do estado do mês + chamadas de API
-    month-settings-card.tsx       → edição de salário/quinzenas/extra fixo
-    daily-ledger-table.tsx        → tabela 100% editável, com busca/filtro/ordenação
-    sidebar.tsx, topbar.tsx, kpi-card.tsx, monthly-chart.tsx,
-    active-days-calendar.tsx, annual-summary-table.tsx, reset-all-button.tsx
-  lib/
-    data.ts                      → planilha original (nunca é alterada)
-    store.ts                     → leitura/gravação do arquivo data/producao.json
-    calculations.ts               → toda a lógica/fórmulas
-    format.ts, utils.ts
+```bash
+npm run build
+npm start
 ```
 
-## Próximos módulos sugeridos (arquitetura já preparada para isso)
+### 🔐 Variáveis de ambiente (opcional)
 
-- Autenticação multiusuário (cada colaborador com seu próprio controle).
-- Trocar o arquivo JSON por um banco de verdade (Postgres/SQLite via Prisma) —
-  a camada `store.ts` já isola essa lógica, então a troca é só ali dentro.
-- Exportação para Excel/PDF a partir dos mesmos dados.
-- Adicionar novos meses/anos além dos 8 já existentes.
+Para proteger o acesso com usuário e senha, defina:
 
+| Variável | Descrição |
+|---|---|
+| `APP_USER` | Usuário de acesso |
+| `APP_PASS` | Senha de acesso |
+
+Se **não** forem definidas, o site fica aberto. Localmente, você pode criar um arquivo `app/.env.local` (ele já está no `.gitignore`):
+
+```bash
+APP_USER=seu_usuario
+APP_PASS=sua_senha_forte
+```
+
+> ⚠️ Nunca coloque usuário e senha no README nem no código. Configure-os apenas nas variáveis de ambiente do ambiente de deploy (por exemplo, na aba *Variables* do Railway).
+
+## 💾 Onde os dados ficam salvos
+
+As edições são gravadas em `data/producao.json`, criado automaticamente na primeira execução a partir dos dados originais em `src/lib/data.ts` (que nunca é alterado). O arquivo guarda os lançamentos de cada mês e também as preferências do app (mês ativo e nome do perfil).
+
+Para recomeçar do zero, apague esse arquivo ou use o botão **"Restaurar dados originais"** dentro do app.
+
+> 💡 Em plataformas com disco efêmero (como o Railway sem volume), o arquivo pode ser perdido a cada novo deploy. Para persistir os dados, configure um *volume* apontando para a pasta `data/`.
+
+## 🧮 Onde está a "inteligência" da planilha
+
+Toda fórmula da planilha foi remapeada para uma função em `src/lib/calculations.ts`:
+
+| Planilha (Excel) | Código |
+|---|---|
+| `F = SE(E="Sim"; $C$5; 0)` (mai–jul) / valor lançado (ago–dez) | `valorExtraDoDia()` |
+| `G = ARRED(quinzena / dias_úteis; 2) + F` | `ganhoDoDia()` |
+| `L = G - K` | `ganhoLiquidoDoDia()` |
+| Blocos "1ª quinzena" / "2ª quinzena" / "Total do mês" | `calcularResumoMes()` |
+| Texto "SITUAÇÃO DO MÊS: ..." | `calcularResumoMes().situacaoTexto` |
+| Aba "Resumo Anual" | `calcularResumoAnual()` |
+
+Os dados brutos (salário, quinzenas, arquivos por dia, extras, descontos e observações) ficam em `src/lib/data.ts`, extraídos célula a célula da planilha original e conferidos programaticamente, sem divergências.
+
+## 📁 Estrutura do repositório
+
+```
+producao-arquivos-saas/
+├── README.md
+├── assets/                        # Prints usados neste README
+└── app/
+    ├── package.json
+    ├── tailwind.config.ts
+    └── src/
+        ├── middleware.ts          # Autenticação básica (APP_USER / APP_PASS)
+        ├── app/
+        │   ├── page.tsx           # Visão geral
+        │   ├── meses/             # Lista de meses e detalhe [slug]
+        │   ├── resumo-anual/      # Resumo anual
+        │   └── api/               # data · dias · mes · config · reset
+        ├── components/            # Sidebar, KPIs, gráficos, tabelas editáveis
+        │   └── ui/                # Card, Badge, Button, Input, campos editáveis
+        └── lib/
+            ├── data.ts            # Dados originais da planilha
+            ├── store.ts           # Leitura/gravação de data/producao.json
+            ├── calculations.ts    # Fórmulas
+            └── format.ts, utils.ts
+```
+
+## 🗺️ Próximos passos
+
+- Autenticação multiusuário (cada colaborador com o seu controle).
+- Trocar o arquivo JSON por um banco de verdade (Postgres ou SQLite via Prisma). A camada `store.ts` já isola essa lógica.
+- Exportação para Excel e PDF.
+- Suporte a novos meses e anos.
+
+---
+
+<p align="center">Feito com 💚 por <a href="https://github.com/jesielrodrigues">Jesiel Rodrigues</a></p>
