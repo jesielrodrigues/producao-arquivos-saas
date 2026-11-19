@@ -19,10 +19,19 @@
 </p>
 
 <p align="center">
-  <img src="telainicial.png" alt="Visão geral do dashboard Produtiva" width="100%">
+  <img src="assets/telainicial.png" alt="Visão geral do dashboard Produtiva" width="100%">
 </p>
 
 ---
+
+## 🔑 Acesso à aplicação online
+
+Ao abrir [producao-arquivos.up.railway.app](https://producao-arquivos.up.railway.app/), o navegador pede usuário e senha. Use:
+
+| Campo | Valor |
+|---|---|
+| **Usuário** | `Homer` |
+| **Senha** | `33` |
 
 ## 🎯 Sobre o projeto
 
@@ -46,8 +55,8 @@ A interface é inspirada em produtos como Notion, Linear e Stripe Dashboard.
 
 <table>
   <tr>
-    <td width="50%"><b>Controle mensal</b><br><img src="telamensal.png" alt="Controle mensal"></td>
-    <td width="50%"><b>Resumo anual</b><br><img src="telaanual.png" alt="Resumo anual"></td>
+    <td width="50%"><b>Controle mensal</b><br><img src="assets/meses.png" alt="Controle mensal"></td>
+    <td width="50%"><b>Resumo anual</b><br><img src="assets/resumo-anual.png" alt="Resumo anual"></td>
   </tr>
 </table>
 
@@ -98,7 +107,7 @@ APP_USER=seu_usuario
 APP_PASS=sua_senha_forte
 ```
 
-> ⚠️ Nunca coloque usuário e senha no README nem no código. Configure-os apenas nas variáveis de ambiente do ambiente de deploy (por exemplo, na aba *Variables* do Railway).
+> ℹ️ O usuário e a senha ficam apenas nas variáveis de ambiente do deploy (por exemplo, na aba *Variables* do Railway) e nunca no código. Para trocar o acesso, altere `APP_USER` e `APP_PASS` lá.
 
 ## 💾 Onde os dados ficam salvos
 
