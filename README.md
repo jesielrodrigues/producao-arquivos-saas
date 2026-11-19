@@ -19,7 +19,6 @@
 </p>
 
 <p align="center">
-  <a href="https://producao-arquivos.up.railway.app/">
     <img src="assets/telainicial.png" alt="Visão geral do dashboard Produtiva" width="100%">
   </a>
 </p>
