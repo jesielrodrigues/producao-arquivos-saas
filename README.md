@@ -1,4 +1,4 @@
-# Controle de Produção (SaaS)
+# Controle de Produção (SaaS) / Versão 2026
 
 Aplicação web para controle pessoal de produção e gestão de arquivos.
 
