@@ -19,12 +19,14 @@
 </p>
 
 <p align="center">
-  <img src="telainicial.png" alt="Visão geral do dashboard Produtiva" width="100%">
+  <img src="assets/telainicial.png" alt="Visão geral do dashboard Produtiva" width="100%">
 </p>
 
 ---
 
 ## 🔑 Acesso à aplicação online
+
+> 🧪 **Este projeto é apenas uma simulação**, criado para fins de demonstração e portfólio. O login abaixo é de demonstração e existe só para que qualquer pessoa possa explorar a aplicação.
 
 Ao abrir [producao-arquivos.up.railway.app](https://producao-arquivos.up.railway.app/), o navegador pede usuário e senha. Use:
 
@@ -32,6 +34,8 @@ Ao abrir [producao-arquivos.up.railway.app](https://producao-arquivos.up.railway
 |---|---|
 | **Usuário** | `Homer` |
 | **Senha** | `33` |
+
+Fique à vontade para editar os lançamentos. Se algo ficar bagunçado, use o botão **"Restaurar dados originais"** dentro do app.
 
 ## 🎯 Sobre o projeto
 
@@ -55,8 +59,8 @@ A interface é inspirada em produtos como Notion, Linear e Stripe Dashboard.
 
 <table>
   <tr>
-    <td width="50%"><b>Controle mensal</b><br><img src="telamensal.png" alt="Controle mensal"></td>
-    <td width="50%"><b>Resumo anual</b><br><img src="telaanual.png" alt="Resumo anual"></td>
+    <td width="50%"><b>Controle mensal</b><br><img src="assets/meses.png" alt="Controle mensal"></td>
+    <td width="50%"><b>Resumo anual</b><br><img src="assets/resumo-anual.png" alt="Resumo anual"></td>
   </tr>
 </table>
 
@@ -107,7 +111,7 @@ APP_USER=seu_usuario
 APP_PASS=sua_senha_forte
 ```
 
-> ℹ️ O usuário e a senha ficam apenas nas variáveis de ambiente do deploy (por exemplo, na aba *Variables* do Railway) e nunca no código. Para trocar o acesso, altere `APP_USER` e `APP_PASS` lá.
+> ℹ️ No deploy, o usuário e a senha ficam nas variáveis de ambiente (por exemplo, na aba *Variables* do Railway) e nunca no código. Para trocar o acesso, altere `APP_USER` e `APP_PASS` lá. Em um uso real, escolha credenciais fortes e não as divulgue publicamente.
 
 ## 💾 Onde os dados ficam salvos
 
