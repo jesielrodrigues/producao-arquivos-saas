@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/telainicial.png" alt="Visão geral do dashboard Produtiva" width="100%">
+  <img src="telainicial.png" alt="Visão geral do dashboard Produtiva" width="100%">
 </p>
 
 ---
@@ -46,8 +46,8 @@ A interface é inspirada em produtos como Notion, Linear e Stripe Dashboard.
 
 <table>
   <tr>
-    <td width="50%"><b>Controle mensal</b><br><img src="assets/meses.png" alt="Controle mensal"></td>
-    <td width="50%"><b>Resumo anual</b><br><img src="assets/resumo-anual.png" alt="Resumo anual"></td>
+    <td width="50%"><b>Controle mensal</b><br><img src="telamensal.png" alt="Controle mensal"></td>
+    <td width="50%"><b>Resumo anual</b><br><img src="telaanual.png" alt="Resumo anual"></td>
   </tr>
 </table>
 
