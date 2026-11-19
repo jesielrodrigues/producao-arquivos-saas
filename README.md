@@ -19,8 +19,7 @@
 </p>
 
 <p align="center">
-    <img src="assets/telainicial.png" alt="Visão geral do dashboard Produtiva" width="100%">
-  </a>
+  <img src="assets/telainicial.png" alt="Visão geral do dashboard Produtiva" width="100%">
 </p>
 
 ---
