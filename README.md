@@ -167,7 +167,3 @@ producao-arquivos-saas/
 - Trocar o arquivo JSON por um banco de verdade (Postgres ou SQLite via Prisma). A camada `store.ts` já isola essa lógica.
 - Exportação para Excel e PDF.
 - Suporte a novos meses e anos.
-
----
-
-<p align="center">Feito com 💚 por <a href="https://github.com/jesielrodrigues">Jesiel Rodrigues</a></p>
